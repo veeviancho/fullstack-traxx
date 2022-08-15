@@ -1,0 +1,143 @@
+:root {
+  --clr-blue: #1d1a3f;
+  --clr-red: #ce0000;
+  --clr-green: rgba(18, 130, 70, 0.5);
+
+  --font-primary: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: var(--clr-blue);
+  font-family: var(--font-primary);
+  margin: 0;
+  cursor: default;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+/* Remove arrows for input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#root {
+  height: 100vh;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 0;
+  transition: 1s;
+  margin: 1rem 0;
+  width: 85%;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--clr-green)
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 60vw;
+  text-align: center;
+}
+
+.msg {
+  color: var(--clr-red);
+}
+
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.input {
+  background-color: transparent;
+  color: white;
+  font-family: var(--font-primary);
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+  transition: 1s;
+  margin: 5px 0;
+}
+
+.input-all {
+  width: 80%;
+}
+
+.input-code {
+  width: 12%;
+  margin-right: 0;
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-contact {
+  width: 63%;
+  margin-left: 0;
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input:hover {
+  padding: 1rem 2rem;
+}
+
+.input::placeholder {
+  color: white;
+}
+
+.nav-item {
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(255,255,255,0);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.nav-item:hover {
+  border: 3px solid white;
+  padding: 1.2rem 1.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    width: 100vw;
+  }
+  .input-code {
+    width: 10%;
+  }
+  .input-contact {
+    width: 60%;
+  }
+  .btn {
+    width: 90%;
+  }
+}

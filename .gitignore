@@ -1,0 +1,5 @@
+challenge-1/dbconnect.php
+**/node_modules
+**/.env
+**/.DS_Store
+.DS_Store

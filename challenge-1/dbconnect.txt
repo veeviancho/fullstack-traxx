@@ -1,0 +1,15 @@
+<?php
+
+//Variable declaration for database connection
+$hostname = "";
+$username = "";
+$password = "";
+$database = "";
+
+@ $db = new mysqli($hostname, $username, $password, $database);
+
+if (mysqli_connect_errno()) {
+    $_SESSION['error'] = "Error connecting to database.";
+}
+
+?>
